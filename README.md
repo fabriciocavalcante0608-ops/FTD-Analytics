@@ -16,7 +16,10 @@ A conferência manual também tinha erros de contagem — na base de referência
 
 1. **Python (`python/`)** — lê a exportação mensal, classifica cada lançamento (`com erro` / `sem erro`) e o tipo de erro (inclusive combinações como "Data+CNPJ"), acumula num histórico mês a mês sem duplicar registros, e gera indicadores (taxa de erro, erros por obra, evolução mensal).
 2. **SQL (`sql/`)** — modela os dados num esquema estrela (`Fato_Lancamentos` + dimensões `Obra`, `Credor`, `Mês`, `Tipo_Erro`), com uma tabela-ponte para lançamentos com múltiplos tipos de erro simultâneos, sem duplicar a linha financeira.
-3. **Power BI** — dashboard com KPIs (total de lançamentos, taxa de acurácia, valor em divergência) e dois gráficos com destaque visual automático (escala de cor) para as obras e tipos de erro mais críticos. O arquivo `.pbix` não é publicado (ver nota sobre dados); o resultado fica documentado em `docs/screenshots/`.
+3. **Power BI** — dashboard com KPIs (total de lançamentos, taxa de acurácia, valor em divergência) e dois gráficos com destaque visual automático (escala de cor) para as obras e tipos de erro mais críticos. O arquivo `.pbix` não é publicado (ver nota sobre dados); o resultado fica documentado abaixo.
+
+![Dashboard FTD Analytics](docs/screenshots/Analytics.png)
+![Painel de erros por obra e tipo](docs/screenshots/Painel.png)
 
 ## Arquitetura
 
