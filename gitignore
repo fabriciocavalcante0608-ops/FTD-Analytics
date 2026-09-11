@@ -1,0 +1,21 @@
+# Dados reais da empresa — NUNCA versionar
+FTD 08*.xlsx
+FTD_Historico.xlsx
+FTD_Analytics_Resultado.xlsx
+FTD_Modelo_PowerBI.xlsx
+*.db
+*.sqlite
+
+# Ambiente Python
+.venv/
+__pycache__/
+*.pyc
+
+# Power BI — o .pbix carrega o banco de dados inteiro embutido (nomes reais
+# de obras e fornecedores), por isso não é versionado. Só os screenshots
+# do dashboard (docs/screenshots/) vão pro repositório.
+*.pbix
+
+# Sistema
+.DS_Store
+Thumbs.db
